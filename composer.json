@@ -1,10 +1,12 @@
 {
     "name": "rooyekhat/igap-php-client",
     "description": "PHP client for iGap messenger",
+    "license": "LGPL-3.0-only",
     "authors": [
         {
             "name": "Asghar Amerehi",
             "email": "amereii@rooyekhat.co"
+            "role": "Developer"
         }
     ],
     "autoload": {
