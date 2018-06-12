@@ -535,7 +535,7 @@ class Api
                                 $this->_logger->warning("Handler class $handlerClass is not found");
                         }
                     } catch (Exception $e) {
-                        $this->_logger->error($e->getMessage(), $e);
+                        $this->_logger->error($e->getMessage(), [$e]);
                     }
                 } else {
                     $this->_logger->warning("Unknown action id ${$unpacked['actionId']}");
