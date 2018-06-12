@@ -1,0 +1,22 @@
+{
+    "name": "RooyeKhat/iGap-PHP-Client",
+    "description": "PHP client for iGap messenger",
+    "authors": [
+        {
+            "name": "Asghar Amerehi",
+            "email": "amereii@rooyekhat.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "iGap\\": "./src",
+            "Proto\\": "./src/Proto",
+            "GPBMetadata\\": "./src/GPBMetadata"
+        }
+    },
+    "require": {
+        "ratchet/pawl": "^0.3.2",
+        "guzzlehttp/promises": "^1.3",
+        "monolog/monolog": "^1.23"
+    }
+}
