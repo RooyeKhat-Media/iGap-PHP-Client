@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\RoomMessageStatus</code>
+ * Protobuf type <code>proto.RoomMessageStatus</code>
  */
 class RoomMessageStatus
 {

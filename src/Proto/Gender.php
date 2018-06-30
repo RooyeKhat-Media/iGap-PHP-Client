@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\Gender</code>
+ * Protobuf type <code>proto.Gender</code>
  */
 class Gender
 {

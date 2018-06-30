@@ -26,9 +26,20 @@ class GeoGetConfigurationResponse extends \Google\Protobuf\Internal\Message
      */
     private $cache_id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\GeoGetConfigurationResponse\TileServer[]|\Google\Protobuf\Internal\RepeatedField $tile_server
+     *     @type string $cache_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GeoGetConfiguration::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -64,12 +75,12 @@ class GeoGetConfigurationResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.GeoGetConfigurationResponse.TileServer tile_server = 2;</code>
-     * @param \Proto\GeoGetConfigurationResponse_TileServer[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\GeoGetConfigurationResponse\TileServer[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setTileServer($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\GeoGetConfigurationResponse_TileServer::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\GeoGetConfigurationResponse\TileServer::class);
         $this->tile_server = $arr;
 
         return $this;

@@ -26,9 +26,20 @@ class GroupAddMember extends \Google\Protobuf\Internal\Message
      */
     private $member = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type \Proto\GroupAddMember\Member $member
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupAddMember::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -77,7 +88,7 @@ class GroupAddMember extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.GroupAddMember.Member member = 3;</code>
-     * @return \Proto\GroupAddMember_Member
+     * @return \Proto\GroupAddMember\Member
      */
     public function getMember()
     {
@@ -86,7 +97,7 @@ class GroupAddMember extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.GroupAddMember.Member member = 3;</code>
-     * @param \Proto\GroupAddMember_Member $var
+     * @param \Proto\GroupAddMember\Member $var
      * @return $this
      */
     public function setMember($var)

@@ -22,9 +22,19 @@ class GeoGetNearbyCoordinateResponse extends \Google\Protobuf\Internal\Message
      */
     private $result;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\GeoGetNearbyCoordinateResponse\Result[]|\Google\Protobuf\Internal\RepeatedField $result
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GeoGetNearbyCoordinate::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class GeoGetNearbyCoordinateResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.GeoGetNearbyCoordinateResponse.Result result = 2;</code>
-     * @param \Proto\GeoGetNearbyCoordinateResponse_Result[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\GeoGetNearbyCoordinateResponse\Result[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setResult($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\GeoGetNearbyCoordinateResponse_Result::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\GeoGetNearbyCoordinateResponse\Result::class);
         $this->result = $arr;
 
         return $this;

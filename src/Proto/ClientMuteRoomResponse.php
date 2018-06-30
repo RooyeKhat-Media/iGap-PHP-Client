@@ -26,9 +26,20 @@ class ClientMuteRoomResponse extends \Google\Protobuf\Internal\Message
      */
     private $room_mute = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int $room_mute
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientMuteRoom::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

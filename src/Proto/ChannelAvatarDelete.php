@@ -26,9 +26,20 @@ class ChannelAvatarDelete extends \Google\Protobuf\Internal\Message
      */
     private $room_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $id
+     *     @type int|string $room_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelAvatarDelete::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

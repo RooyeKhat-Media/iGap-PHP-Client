@@ -22,9 +22,19 @@ class QrCodeJoin extends \Google\Protobuf\Internal\Message
      */
     private $invite_token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $invite_token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\QrCodeJoin::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

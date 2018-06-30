@@ -34,9 +34,22 @@ class PushLoginTokenResponse extends \Google\Protobuf\Internal\Message
      */
     private $token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $username
+     *     @type int|string $user_id
+     *     @type string $author_hash
+     *     @type string $token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\PushLoginToken::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

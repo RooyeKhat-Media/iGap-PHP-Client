@@ -4,98 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.GeoGetNearbyDistanceResponse.Result</code>
- */
-class GeoGetNearbyDistanceResponse_Result extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
+     * This class is deprecated. Use Proto\GeoGetNearbyDistanceResponse\Result instead.
+     * @deprecated
      */
-    private $user_id = 0;
-    /**
-     * Generated from protobuf field <code>bool has_comment = 2;</code>
-     */
-    private $has_comment = false;
-    /**
-     * Generated from protobuf field <code>uint32 distance = 3;</code>
-     */
-    private $distance = 0;
-
-    public function __construct() {
-        \GPBMetadata\GeoGetNearbyDistance::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @return int|string
-     */
-    public function getUserId()
-    {
-        return $this->user_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->user_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool has_comment = 2;</code>
-     * @return bool
-     */
-    public function getHasComment()
-    {
-        return $this->has_comment;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool has_comment = 2;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setHasComment($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->has_comment = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint32 distance = 3;</code>
-     * @return int
-     */
-    public function getDistance()
-    {
-        return $this->distance;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint32 distance = 3;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setDistance($var)
-    {
-        GPBUtil::checkUint32($var);
-        $this->distance = $var;
-
-        return $this;
-    }
-
+    class GeoGetNearbyDistanceResponse_Result {}
 }
+class_exists(GeoGetNearbyDistanceResponse\Result::class);
+@trigger_error('Proto\GeoGetNearbyDistanceResponse_Result is deprecated and will be removed in the next major release. Use Proto\GeoGetNearbyDistanceResponse\Result instead', E_USER_DEPRECATED);
 

@@ -26,9 +26,20 @@ class QrCodeNewDeviceResponse extends \Google\Protobuf\Internal\Message
      */
     private $expire_time = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $qr_code_image
+     *     @type int $expire_time
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\QrCodeNewDevice::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

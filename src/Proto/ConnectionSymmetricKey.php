@@ -26,9 +26,20 @@ class ConnectionSymmetricKey extends \Google\Protobuf\Internal\Message
      */
     private $version = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $symmetric_key
+     *     @type int $version
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ConnectionSecuring::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

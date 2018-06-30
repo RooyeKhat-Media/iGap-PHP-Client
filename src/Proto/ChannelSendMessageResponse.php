@@ -26,9 +26,20 @@ class ChannelSendMessageResponse extends \Google\Protobuf\Internal\Message
      */
     private $room_message = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type \Proto\RoomMessage $room_message
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelSendMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

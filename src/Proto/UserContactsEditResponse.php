@@ -34,9 +34,22 @@ class UserContactsEditResponse extends \Google\Protobuf\Internal\Message
      */
     private $initials = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $phone
+     *     @type string $first_name
+     *     @type string $last_name
+     *     @type string $initials
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserContactsEdit::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

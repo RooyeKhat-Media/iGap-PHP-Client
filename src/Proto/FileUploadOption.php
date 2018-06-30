@@ -22,9 +22,19 @@ class FileUploadOption extends \Google\Protobuf\Internal\Message
      */
     private $size = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $size
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\FileUploadOption::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

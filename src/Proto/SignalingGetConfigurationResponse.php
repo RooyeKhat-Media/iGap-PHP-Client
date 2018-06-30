@@ -38,9 +38,23 @@ class SignalingGetConfigurationResponse extends \Google\Protobuf\Internal\Messag
      */
     private $secret_chat = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\SignalingGetConfigurationResponse\IceServer[]|\Google\Protobuf\Internal\RepeatedField $ice_server
+     *     @type bool $voice_calling
+     *     @type bool $video_calling
+     *     @type bool $screen_sharing
+     *     @type bool $secret_chat
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingGetConfiguration::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -76,12 +90,12 @@ class SignalingGetConfigurationResponse extends \Google\Protobuf\Internal\Messag
 
     /**
      * Generated from protobuf field <code>repeated .proto.SignalingGetConfigurationResponse.IceServer ice_server = 2;</code>
-     * @param \Proto\SignalingGetConfigurationResponse_IceServer[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\SignalingGetConfigurationResponse\IceServer[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setIceServer($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\SignalingGetConfigurationResponse_IceServer::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\SignalingGetConfigurationResponse\IceServer::class);
         $this->ice_server = $arr;
 
         return $this;

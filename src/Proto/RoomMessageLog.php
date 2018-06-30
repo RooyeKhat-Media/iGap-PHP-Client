@@ -26,9 +26,20 @@ class RoomMessageLog extends \Google\Protobuf\Internal\Message
      */
     private $target_user = null;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $type
+     *     @type int $extra_type
+     *     @type \Proto\RoomMessageLog\TargetUser $target_user
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**
@@ -77,7 +88,7 @@ class RoomMessageLog extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.RoomMessageLog.TargetUser target_user = 3;</code>
-     * @return \Proto\RoomMessageLog_TargetUser
+     * @return \Proto\RoomMessageLog\TargetUser
      */
     public function getTargetUser()
     {
@@ -86,7 +97,7 @@ class RoomMessageLog extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.RoomMessageLog.TargetUser target_user = 3;</code>
-     * @param \Proto\RoomMessageLog_TargetUser $var
+     * @param \Proto\RoomMessageLog\TargetUser $var
      * @return $this
      */
     public function setTargetUser($var)

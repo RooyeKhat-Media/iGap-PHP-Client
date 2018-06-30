@@ -26,9 +26,20 @@ class ChannelAddMember extends \Google\Protobuf\Internal\Message
      */
     private $member = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type \Proto\ChannelAddMember\Member $member
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelAddMember::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -77,7 +88,7 @@ class ChannelAddMember extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.ChannelAddMember.Member member = 3;</code>
-     * @return \Proto\ChannelAddMember_Member
+     * @return \Proto\ChannelAddMember\Member
      */
     public function getMember()
     {
@@ -86,7 +97,7 @@ class ChannelAddMember extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.ChannelAddMember.Member member = 3;</code>
-     * @param \Proto\ChannelAddMember_Member $var
+     * @param \Proto\ChannelAddMember\Member $var
      * @return $this
      */
     public function setMember($var)

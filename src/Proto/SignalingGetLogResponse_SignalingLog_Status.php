@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\SignalingGetLogResponse\SignalingLog\Status</code>
- */
-class SignalingGetLogResponse_SignalingLog_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>MISSED = 0;</code>
+     * This class is deprecated. Use Proto\SignalingGetLogResponse\SignalingLog\Status instead.
+     * @deprecated
      */
-    const MISSED = 0;
-    /**
-     * Generated from protobuf enum <code>CANCELED = 1;</code>
-     */
-    const CANCELED = 1;
-    /**
-     * Generated from protobuf enum <code>INCOMING = 2;</code>
-     */
-    const INCOMING = 2;
-    /**
-     * Generated from protobuf enum <code>OUTGOING = 3;</code>
-     */
-    const OUTGOING = 3;
+    class SignalingGetLogResponse_SignalingLog_Status {}
 }
+class_exists(SignalingGetLogResponse\SignalingLog\Status::class);
+@trigger_error('Proto\SignalingGetLogResponse_SignalingLog_Status is deprecated and will be removed in the next major release. Use Proto\SignalingGetLogResponse\SignalingLog\Status instead', E_USER_DEPRECATED);
 

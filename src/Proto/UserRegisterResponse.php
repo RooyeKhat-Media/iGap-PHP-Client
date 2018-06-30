@@ -50,9 +50,26 @@ class UserRegisterResponse extends \Google\Protobuf\Internal\Message
      */
     private $verify_code_digit_count = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $username
+     *     @type int|string $user_id
+     *     @type string $author_hash
+     *     @type int $method
+     *     @type int $resend_delay
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $sms_number
+     *     @type string $verify_code_regex
+     *     @type int $verify_code_digit_count
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserRegister::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

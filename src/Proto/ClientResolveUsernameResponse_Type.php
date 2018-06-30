@@ -4,18 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ClientResolveUsernameResponse\Type</code>
- */
-class ClientResolveUsernameResponse_Type
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>USER = 0;</code>
+     * This class is deprecated. Use Proto\ClientResolveUsernameResponse\Type instead.
+     * @deprecated
      */
-    const USER = 0;
-    /**
-     * Generated from protobuf enum <code>ROOM = 1;</code>
-     */
-    const ROOM = 1;
+    class ClientResolveUsernameResponse_Type {}
 }
+class_exists(ClientResolveUsernameResponse\Type::class);
+@trigger_error('Proto\ClientResolveUsernameResponse_Type is deprecated and will be removed in the next major release. Use Proto\ClientResolveUsernameResponse\Type instead', E_USER_DEPRECATED);
 

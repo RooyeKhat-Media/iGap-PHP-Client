@@ -26,9 +26,20 @@ class UserContactsImport extends \Google\Protobuf\Internal\Message
      */
     private $force = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type \Proto\UserContactsImport\Contact[]|\Google\Protobuf\Internal\RepeatedField $contacts
+     *     @type bool $force
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserContactsImport::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -64,12 +75,12 @@ class UserContactsImport extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.UserContactsImport.Contact contacts = 2;</code>
-     * @param \Proto\UserContactsImport_Contact[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\UserContactsImport\Contact[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setContacts($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserContactsImport_Contact::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserContactsImport\Contact::class);
         $this->contacts = $arr;
 
         return $this;

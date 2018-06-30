@@ -4,124 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.GeoGetNearbyCoordinateResponse.Result</code>
- */
-class GeoGetNearbyCoordinateResponse_Result extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
+     * This class is deprecated. Use Proto\GeoGetNearbyCoordinateResponse\Result instead.
+     * @deprecated
      */
-    private $user_id = 0;
-    /**
-     * Generated from protobuf field <code>bool has_comment = 2;</code>
-     */
-    private $has_comment = false;
-    /**
-     * Generated from protobuf field <code>double lat = 3;</code>
-     */
-    private $lat = 0.0;
-    /**
-     * Generated from protobuf field <code>double lon = 4;</code>
-     */
-    private $lon = 0.0;
-
-    public function __construct() {
-        \GPBMetadata\GeoGetNearbyCoordinate::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @return int|string
-     */
-    public function getUserId()
-    {
-        return $this->user_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->user_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool has_comment = 2;</code>
-     * @return bool
-     */
-    public function getHasComment()
-    {
-        return $this->has_comment;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool has_comment = 2;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setHasComment($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->has_comment = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>double lat = 3;</code>
-     * @return float
-     */
-    public function getLat()
-    {
-        return $this->lat;
-    }
-
-    /**
-     * Generated from protobuf field <code>double lat = 3;</code>
-     * @param float $var
-     * @return $this
-     */
-    public function setLat($var)
-    {
-        GPBUtil::checkDouble($var);
-        $this->lat = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>double lon = 4;</code>
-     * @return float
-     */
-    public function getLon()
-    {
-        return $this->lon;
-    }
-
-    /**
-     * Generated from protobuf field <code>double lon = 4;</code>
-     * @param float $var
-     * @return $this
-     */
-    public function setLon($var)
-    {
-        GPBUtil::checkDouble($var);
-        $this->lon = $var;
-
-        return $this;
-    }
-
+    class GeoGetNearbyCoordinateResponse_Result {}
 }
+class_exists(GeoGetNearbyCoordinateResponse\Result::class);
+@trigger_error('Proto\GeoGetNearbyCoordinateResponse_Result is deprecated and will be removed in the next major release. Use Proto\GeoGetNearbyCoordinateResponse\Result instead', E_USER_DEPRECATED);
 

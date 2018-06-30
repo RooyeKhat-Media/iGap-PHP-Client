@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\GroupCheckUsernameResponse\Status</code>
- */
-class GroupCheckUsernameResponse_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>INVALID = 0;</code>
+     * This class is deprecated. Use Proto\GroupCheckUsernameResponse\Status instead.
+     * @deprecated
      */
-    const INVALID = 0;
-    /**
-     * Generated from protobuf enum <code>TAKEN = 1;</code>
-     */
-    const TAKEN = 1;
-    /**
-     * Generated from protobuf enum <code>AVAILABLE = 2;</code>
-     */
-    const AVAILABLE = 2;
-    /**
-     * Generated from protobuf enum <code>OCCUPYING_LIMIT_EXCEEDED = 3;</code>
-     */
-    const OCCUPYING_LIMIT_EXCEEDED = 3;
+    class GroupCheckUsernameResponse_Status {}
 }
+class_exists(GroupCheckUsernameResponse\Status::class);
+@trigger_error('Proto\GroupCheckUsernameResponse_Status is deprecated and will be removed in the next major release. Use Proto\GroupCheckUsernameResponse\Status instead', E_USER_DEPRECATED);
 

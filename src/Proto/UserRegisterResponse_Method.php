@@ -4,22 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\UserRegisterResponse\Method</code>
- */
-class UserRegisterResponse_Method
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>VERIFY_CODE_SMS = 0;</code>
+     * This class is deprecated. Use Proto\UserRegisterResponse\Method instead.
+     * @deprecated
      */
-    const VERIFY_CODE_SMS = 0;
-    /**
-     * Generated from protobuf enum <code>VERIFY_CODE_SOCKET = 1;</code>
-     */
-    const VERIFY_CODE_SOCKET = 1;
-    /**
-     * Generated from protobuf enum <code>VERIFY_CODE_SMS_SOCKET = 2;</code>
-     */
-    const VERIFY_CODE_SMS_SOCKET = 2;
+    class UserRegisterResponse_Method {}
 }
+class_exists(UserRegisterResponse\Method::class);
+@trigger_error('Proto\UserRegisterResponse_Method is deprecated and will be removed in the next major release. Use Proto\UserRegisterResponse\Method instead', E_USER_DEPRECATED);
 

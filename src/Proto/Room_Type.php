@@ -4,22 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\Room\Type</code>
- */
-class Room_Type
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>CHAT = 0;</code>
+     * This class is deprecated. Use Proto\Room\Type instead.
+     * @deprecated
      */
-    const CHAT = 0;
-    /**
-     * Generated from protobuf enum <code>GROUP = 1;</code>
-     */
-    const GROUP = 1;
-    /**
-     * Generated from protobuf enum <code>CHANNEL = 2;</code>
-     */
-    const CHANNEL = 2;
+    class Room_Type {}
 }
+class_exists(Room\Type::class);
+@trigger_error('Proto\Room_Type is deprecated and will be removed in the next major release. Use Proto\Room\Type instead', E_USER_DEPRECATED);
 

@@ -30,9 +30,21 @@ class SignalingCandidate extends \Google\Protobuf\Internal\Message
      */
     private $sdp_m_line_index = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $candidate
+     *     @type string $sdp_m_id
+     *     @type int $sdp_m_line_index
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingCandidate::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

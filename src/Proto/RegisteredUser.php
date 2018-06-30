@@ -82,9 +82,34 @@ class RegisteredUser extends \Google\Protobuf\Internal\Message
      */
     private $verified = false;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $id
+     *     @type string $username
+     *     @type int|string $phone
+     *     @type string $first_name
+     *     @type string $last_name
+     *     @type string $display_name
+     *     @type string $initials
+     *     @type string $color
+     *     @type int $status
+     *     @type int $last_seen
+     *     @type int $avatar_count
+     *     @type \Proto\Avatar $avatar
+     *     @type bool $mutual
+     *     @type bool $deleted
+     *     @type string $cache_id
+     *     @type string $bio
+     *     @type bool $verified
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

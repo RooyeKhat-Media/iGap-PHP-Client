@@ -54,9 +54,27 @@ class GroupSendMessage extends \Google\Protobuf\Internal\Message
      */
     private $random_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int $message_type
+     *     @type int|string $room_id
+     *     @type string $message
+     *     @type string $attachment
+     *     @type \Proto\RoomMessageLocation $location
+     *     @type \Proto\RoomMessageContact $contact
+     *     @type int|string $reply_to
+     *     @type \Proto\RoomMessageForwardFrom $forward_from
+     *     @type int|string $random_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupSendMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -22,9 +22,19 @@ class UserTwoStepVerificationVerifyRecoveryEmail extends \Google\Protobuf\Intern
      */
     private $token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationVerifyRecoveryEmail::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

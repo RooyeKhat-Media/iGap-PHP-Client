@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\Platform</code>
+ * Protobuf type <code>proto.Platform</code>
  */
 class Platform
 {

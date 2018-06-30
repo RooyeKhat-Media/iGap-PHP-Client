@@ -4,14 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\UserDelete\Reason</code>
- */
-class UserDelete_Reason
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>OTHER = 0;</code>
+     * This class is deprecated. Use Proto\UserDelete\Reason instead.
+     * @deprecated
      */
-    const OTHER = 0;
+    class UserDelete_Reason {}
 }
+class_exists(UserDelete\Reason::class);
+@trigger_error('Proto\UserDelete_Reason is deprecated and will be removed in the next major release. Use Proto\UserDelete\Reason instead', E_USER_DEPRECATED);
 

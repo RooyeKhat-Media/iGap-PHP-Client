@@ -4,124 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.ChannelGetMessagesStatsResponse.Stats</code>
- */
-class ChannelGetMessagesStatsResponse_Stats extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
+     * This class is deprecated. Use Proto\ChannelGetMessagesStatsResponse\Stats instead.
+     * @deprecated
      */
-    private $message_id = 0;
-    /**
-     * Generated from protobuf field <code>string views_label = 2;</code>
-     */
-    private $views_label = '';
-    /**
-     * Generated from protobuf field <code>string thumbs_up_label = 3;</code>
-     */
-    private $thumbs_up_label = '';
-    /**
-     * Generated from protobuf field <code>string thumbs_down_label = 4;</code>
-     */
-    private $thumbs_down_label = '';
-
-    public function __construct() {
-        \GPBMetadata\ChannelGetMessagesStats::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
-     * @return int|string
-     */
-    public function getMessageId()
-    {
-        return $this->message_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setMessageId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->message_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string views_label = 2;</code>
-     * @return string
-     */
-    public function getViewsLabel()
-    {
-        return $this->views_label;
-    }
-
-    /**
-     * Generated from protobuf field <code>string views_label = 2;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setViewsLabel($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->views_label = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string thumbs_up_label = 3;</code>
-     * @return string
-     */
-    public function getThumbsUpLabel()
-    {
-        return $this->thumbs_up_label;
-    }
-
-    /**
-     * Generated from protobuf field <code>string thumbs_up_label = 3;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setThumbsUpLabel($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->thumbs_up_label = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string thumbs_down_label = 4;</code>
-     * @return string
-     */
-    public function getThumbsDownLabel()
-    {
-        return $this->thumbs_down_label;
-    }
-
-    /**
-     * Generated from protobuf field <code>string thumbs_down_label = 4;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setThumbsDownLabel($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->thumbs_down_label = $var;
-
-        return $this;
-    }
-
+    class ChannelGetMessagesStatsResponse_Stats {}
 }
+class_exists(ChannelGetMessagesStatsResponse\Stats::class);
+@trigger_error('Proto\ChannelGetMessagesStatsResponse_Stats is deprecated and will be removed in the next major release. Use Proto\ChannelGetMessagesStatsResponse\Stats instead', E_USER_DEPRECATED);
 

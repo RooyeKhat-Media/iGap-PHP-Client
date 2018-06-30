@@ -4,18 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ClientGetRoomHistory\Direction</code>
- */
-class ClientGetRoomHistory_Direction
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>UP = 0;</code>
+     * This class is deprecated. Use Proto\ClientGetRoomHistory\Direction instead.
+     * @deprecated
      */
-    const UP = 0;
-    /**
-     * Generated from protobuf enum <code>DOWN = 1;</code>
-     */
-    const DOWN = 1;
+    class ClientGetRoomHistory_Direction {}
 }
+class_exists(ClientGetRoomHistory\Direction::class);
+@trigger_error('Proto\ClientGetRoomHistory_Direction is deprecated and will be removed in the next major release. Use Proto\ClientGetRoomHistory\Direction instead', E_USER_DEPRECATED);
 

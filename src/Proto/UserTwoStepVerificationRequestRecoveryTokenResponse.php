@@ -22,9 +22,19 @@ class UserTwoStepVerificationRequestRecoveryTokenResponse extends \Google\Protob
      */
     private $email_pattern = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $email_pattern
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationRequestRecoveryToken::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

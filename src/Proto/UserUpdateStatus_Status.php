@@ -4,18 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\UserUpdateStatus\Status</code>
- */
-class UserUpdateStatus_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>ONLINE = 0;</code>
+     * This class is deprecated. Use Proto\UserUpdateStatus\Status instead.
+     * @deprecated
      */
-    const ONLINE = 0;
-    /**
-     * Generated from protobuf enum <code>OFFLINE = 1;</code>
-     */
-    const OFFLINE = 1;
+    class UserUpdateStatus_Status {}
 }
+class_exists(UserUpdateStatus\Status::class);
+@trigger_error('Proto\UserUpdateStatus_Status is deprecated and will be removed in the next major release. Use Proto\UserUpdateStatus\Status instead', E_USER_DEPRECATED);
 

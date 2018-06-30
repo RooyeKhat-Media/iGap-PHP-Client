@@ -22,9 +22,19 @@ class SignalingClearLogResponse extends \Google\Protobuf\Internal\Message
      */
     private $clear_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $clear_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingClearLog::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -30,9 +30,21 @@ class FileUploadStatusResponse extends \Google\Protobuf\Internal\Message
      */
     private $recheck_delay_ms = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $status
+     *     @type float $progress
+     *     @type int $recheck_delay_ms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\FileUploadStatus::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

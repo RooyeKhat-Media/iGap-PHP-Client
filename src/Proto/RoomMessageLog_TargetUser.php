@@ -4,46 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.RoomMessageLog.TargetUser</code>
- */
-class RoomMessageLog_TargetUser extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 id = 1;</code>
+     * This class is deprecated. Use Proto\RoomMessageLog\TargetUser instead.
+     * @deprecated
      */
-    private $id = 0;
-
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 id = 1;</code>
-     * @return int|string
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->id = $var;
-
-        return $this;
-    }
-
+    class RoomMessageLog_TargetUser {}
 }
+class_exists(RoomMessageLog\TargetUser::class);
+@trigger_error('Proto\RoomMessageLog_TargetUser is deprecated and will be removed in the next major release. Use Proto\RoomMessageLog\TargetUser instead', E_USER_DEPRECATED);
 

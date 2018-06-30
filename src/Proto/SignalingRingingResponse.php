@@ -18,9 +18,18 @@ class SignalingRingingResponse extends \Google\Protobuf\Internal\Message
      */
     private $response = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingRinging::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

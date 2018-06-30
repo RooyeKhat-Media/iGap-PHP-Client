@@ -4,22 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\UserProfileCheckUsernameResponse\Status</code>
- */
-class UserProfileCheckUsernameResponse_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>INVALID = 0;</code>
+     * This class is deprecated. Use Proto\UserProfileCheckUsernameResponse\Status instead.
+     * @deprecated
      */
-    const INVALID = 0;
-    /**
-     * Generated from protobuf enum <code>TAKEN = 1;</code>
-     */
-    const TAKEN = 1;
-    /**
-     * Generated from protobuf enum <code>AVAILABLE = 2;</code>
-     */
-    const AVAILABLE = 2;
+    class UserProfileCheckUsernameResponse_Status {}
 }
+class_exists(UserProfileCheckUsernameResponse\Status::class);
+@trigger_error('Proto\UserProfileCheckUsernameResponse_Status is deprecated and will be removed in the next major release. Use Proto\UserProfileCheckUsernameResponse\Status instead', E_USER_DEPRECATED);
 

@@ -30,9 +30,21 @@ class UserReport extends \Google\Protobuf\Internal\Message
      */
     private $description = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $user_id
+     *     @type int $reason
+     *     @type string $description
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserReport::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -26,9 +26,20 @@ class ChannelUpdateDraft extends \Google\Protobuf\Internal\Message
      */
     private $draft = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type \Proto\RoomDraft $draft
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelUpdateDraft::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

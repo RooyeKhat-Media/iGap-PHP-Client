@@ -22,9 +22,19 @@ class ClientSearchUsername extends \Google\Protobuf\Internal\Message
      */
     private $query = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $query
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientSearchUsername::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

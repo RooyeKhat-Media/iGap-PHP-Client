@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\PrivacyLevel</code>
+ * Protobuf type <code>proto.PrivacyLevel</code>
  */
 class PrivacyLevel
 {

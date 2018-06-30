@@ -22,9 +22,19 @@ class ClientGetRoomResponse extends \Google\Protobuf\Internal\Message
      */
     private $room = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\Room $room
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientGetRoom::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

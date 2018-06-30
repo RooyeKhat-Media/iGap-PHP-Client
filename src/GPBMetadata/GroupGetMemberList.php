@@ -16,7 +16,7 @@ class GroupGetMemberList
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0a95040a1847726f75704765744d656d6265724c6973742e70726f746f12" .
             "0570726f746f1a0e526573706f6e73652e70726f746f1a0c476c6f62616c" .

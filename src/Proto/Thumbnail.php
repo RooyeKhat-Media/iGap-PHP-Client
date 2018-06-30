@@ -38,9 +38,23 @@ class Thumbnail extends \Google\Protobuf\Internal\Message
      */
     private $mime = '';
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $size
+     *     @type int $width
+     *     @type int $height
+     *     @type string $cache_id
+     *     @type string $name
+     *     @type string $mime
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

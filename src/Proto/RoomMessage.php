@@ -98,9 +98,38 @@ class RoomMessage extends \Google\Protobuf\Internal\Message
      */
     private $channel_extra = null;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $message_id
+     *     @type int|string $message_version
+     *     @type int $status
+     *     @type int|string $status_version
+     *     @type int $message_type
+     *     @type string $message
+     *     @type \Proto\File $attachment
+     *     @type \Proto\RoomMessage\Author $author
+     *     @type \Proto\RoomMessageLocation $location
+     *     @type \Proto\RoomMessageLog $log
+     *     @type \Proto\RoomMessageContact $contact
+     *     @type bool $edited
+     *     @type int $create_time
+     *     @type int $update_time
+     *     @type bool $deleted
+     *     @type \Proto\RoomMessage $forward_from
+     *     @type \Proto\RoomMessage $reply_to
+     *     @type int|string $previous_message_id
+     *     @type int|string $random_id
+     *     @type int $extra_type
+     *     @type \Proto\RoomMessage\ChannelExtra $channel_extra
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**
@@ -259,7 +288,7 @@ class RoomMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.RoomMessage.Author author = 8;</code>
-     * @return \Proto\RoomMessage_Author
+     * @return \Proto\RoomMessage\Author
      */
     public function getAuthor()
     {
@@ -268,7 +297,7 @@ class RoomMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.RoomMessage.Author author = 8;</code>
-     * @param \Proto\RoomMessage_Author $var
+     * @param \Proto\RoomMessage\Author $var
      * @return $this
      */
     public function setAuthor($var)
@@ -545,7 +574,7 @@ class RoomMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.RoomMessage.ChannelExtra channel_extra = 20;</code>
-     * @return \Proto\RoomMessage_ChannelExtra
+     * @return \Proto\RoomMessage\ChannelExtra
      */
     public function getChannelExtra()
     {
@@ -554,7 +583,7 @@ class RoomMessage extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.RoomMessage.ChannelExtra channel_extra = 20;</code>
-     * @param \Proto\RoomMessage_ChannelExtra $var
+     * @param \Proto\RoomMessage\ChannelExtra $var
      * @return $this
      */
     public function setChannelExtra($var)

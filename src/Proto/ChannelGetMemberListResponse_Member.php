@@ -4,72 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.ChannelGetMemberListResponse.Member</code>
- */
-class ChannelGetMemberListResponse_Member extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 userId = 1;</code>
+     * This class is deprecated. Use Proto\ChannelGetMemberListResponse\Member instead.
+     * @deprecated
      */
-    private $userId = 0;
-    /**
-     * Generated from protobuf field <code>.proto.ChannelRoom.Role role = 2;</code>
-     */
-    private $role = 0;
-
-    public function __construct() {
-        \GPBMetadata\ChannelGetMemberList::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 userId = 1;</code>
-     * @return int|string
-     */
-    public function getUserId()
-    {
-        return $this->userId;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 userId = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->userId = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.proto.ChannelRoom.Role role = 2;</code>
-     * @return int
-     */
-    public function getRole()
-    {
-        return $this->role;
-    }
-
-    /**
-     * Generated from protobuf field <code>.proto.ChannelRoom.Role role = 2;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setRole($var)
-    {
-        GPBUtil::checkEnum($var, \Proto\ChannelRoom_Role::class);
-        $this->role = $var;
-
-        return $this;
-    }
-
+    class ChannelGetMemberListResponse_Member {}
 }
+class_exists(ChannelGetMemberListResponse\Member::class);
+@trigger_error('Proto\ChannelGetMemberListResponse_Member is deprecated and will be removed in the next major release. Use Proto\ChannelGetMemberListResponse\Member instead', E_USER_DEPRECATED);
 

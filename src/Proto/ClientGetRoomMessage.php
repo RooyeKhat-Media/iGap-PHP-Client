@@ -26,9 +26,20 @@ class ClientGetRoomMessage extends \Google\Protobuf\Internal\Message
      */
     private $message_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type int|string $message_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientGetRoomMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -22,9 +22,19 @@ class UserTwoStepVerificationChangeRecoveryEmailResponse extends \Google\Protobu
      */
     private $unconfirmed_email_pattern = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $unconfirmed_email_pattern
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationChangeRecoveryEmail::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

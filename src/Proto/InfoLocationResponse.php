@@ -38,9 +38,23 @@ class InfoLocationResponse extends \Google\Protobuf\Internal\Message
      */
     private $regex = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $iso_code
+     *     @type int $calling_code
+     *     @type string $name
+     *     @type string $pattern
+     *     @type string $regex
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\InfoLocation::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

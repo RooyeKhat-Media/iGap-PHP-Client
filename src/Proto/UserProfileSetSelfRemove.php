@@ -22,9 +22,19 @@ class UserProfileSetSelfRemove extends \Google\Protobuf\Internal\Message
      */
     private $self_remove = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int $self_remove
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserProfileSetSelfRemove::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

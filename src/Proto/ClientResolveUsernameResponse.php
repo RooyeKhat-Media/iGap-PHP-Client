@@ -30,9 +30,21 @@ class ClientResolveUsernameResponse extends \Google\Protobuf\Internal\Message
      */
     private $room = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $type
+     *     @type \Proto\RegisteredUser $user
+     *     @type \Proto\Room $room
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientResolveUsername::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

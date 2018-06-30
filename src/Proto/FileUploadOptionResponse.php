@@ -30,9 +30,21 @@ class FileUploadOptionResponse extends \Google\Protobuf\Internal\Message
      */
     private $max_connection = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $first_bytes_limit
+     *     @type int $last_bytes_limit
+     *     @type int $max_connection
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\FileUploadOption::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

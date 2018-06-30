@@ -38,9 +38,23 @@ class ChatUpdateStatusResponse extends \Google\Protobuf\Internal\Message
      */
     private $updater_author_hash = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int|string $message_id
+     *     @type int $status
+     *     @type int|string $status_version
+     *     @type string $updater_author_hash
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChatUpdateStatus::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

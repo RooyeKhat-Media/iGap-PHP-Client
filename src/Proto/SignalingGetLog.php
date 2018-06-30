@@ -22,9 +22,19 @@ class SignalingGetLog extends \Google\Protobuf\Internal\Message
      */
     private $pagination = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type \Proto\Pagination $pagination
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingGetLog::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

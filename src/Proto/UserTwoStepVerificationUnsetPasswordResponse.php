@@ -18,9 +18,18 @@ class UserTwoStepVerificationUnsetPasswordResponse extends \Google\Protobuf\Inte
      */
     private $response = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationUnsetPassword::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

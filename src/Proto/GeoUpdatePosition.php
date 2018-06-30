@@ -26,9 +26,20 @@ class GeoUpdatePosition extends \Google\Protobuf\Internal\Message
      */
     private $lon = 0.0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type float $lat
+     *     @type float $lon
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GeoUpdatePosition::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

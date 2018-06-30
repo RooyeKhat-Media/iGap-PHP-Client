@@ -58,9 +58,28 @@ class GroupRoom extends \Google\Protobuf\Internal\Message
      */
     private $public_extra = null;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $type
+     *     @type int $role
+     *     @type int $participants_count
+     *     @type string $participants_count_label
+     *     @type int $participants_count_limit
+     *     @type string $participants_count_limit_label
+     *     @type string $description
+     *     @type int $avatar_count
+     *     @type \Proto\Avatar $avatar
+     *     @type \Proto\GroupRoom\PrivateExtra $private_extra
+     *     @type \Proto\GroupRoom\PublicExtra $public_extra
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**
@@ -263,7 +282,7 @@ class GroupRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.GroupRoom.PrivateExtra private_extra = 10;</code>
-     * @return \Proto\GroupRoom_PrivateExtra
+     * @return \Proto\GroupRoom\PrivateExtra
      */
     public function getPrivateExtra()
     {
@@ -272,7 +291,7 @@ class GroupRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.GroupRoom.PrivateExtra private_extra = 10;</code>
-     * @param \Proto\GroupRoom_PrivateExtra $var
+     * @param \Proto\GroupRoom\PrivateExtra $var
      * @return $this
      */
     public function setPrivateExtra($var)
@@ -285,7 +304,7 @@ class GroupRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.GroupRoom.PublicExtra public_extra = 11;</code>
-     * @return \Proto\GroupRoom_PublicExtra
+     * @return \Proto\GroupRoom\PublicExtra
      */
     public function getPublicExtra()
     {
@@ -294,7 +313,7 @@ class GroupRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.GroupRoom.PublicExtra public_extra = 11;</code>
-     * @param \Proto\GroupRoom_PublicExtra $var
+     * @param \Proto\GroupRoom\PublicExtra $var
      * @return $this
      */
     public function setPublicExtra($var)

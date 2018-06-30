@@ -22,9 +22,19 @@ class ChannelGetMessagesStatsResponse extends \Google\Protobuf\Internal\Message
      */
     private $stats;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\ChannelGetMessagesStatsResponse\Stats[]|\Google\Protobuf\Internal\RepeatedField $stats
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelGetMessagesStats::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class ChannelGetMessagesStatsResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.ChannelGetMessagesStatsResponse.Stats stats = 2;</code>
-     * @param \Proto\ChannelGetMessagesStatsResponse_Stats[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\ChannelGetMessagesStatsResponse\Stats[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setStats($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ChannelGetMessagesStatsResponse_Stats::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ChannelGetMessagesStatsResponse\Stats::class);
         $this->stats = $arr;
 
         return $this;

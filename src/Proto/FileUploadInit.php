@@ -38,9 +38,23 @@ class FileUploadInit extends \Google\Protobuf\Internal\Message
      */
     private $file_name = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $first_bytes
+     *     @type string $last_bytes
+     *     @type int|string $size
+     *     @type string $file_hash
+     *     @type string $file_name
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\FileUploadInit::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

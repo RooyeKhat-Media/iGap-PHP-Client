@@ -22,9 +22,19 @@ class ClientSearchUsernameResponse extends \Google\Protobuf\Internal\Message
      */
     private $result;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\ClientSearchUsernameResponse\Result[]|\Google\Protobuf\Internal\RepeatedField $result
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientSearchUsername::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class ClientSearchUsernameResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.ClientSearchUsernameResponse.Result result = 2;</code>
-     * @param \Proto\ClientSearchUsernameResponse_Result[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\ClientSearchUsernameResponse\Result[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setResult($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ClientSearchUsernameResponse_Result::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ClientSearchUsernameResponse\Result::class);
         $this->result = $arr;
 
         return $this;

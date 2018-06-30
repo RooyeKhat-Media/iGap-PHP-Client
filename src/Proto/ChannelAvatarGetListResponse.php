@@ -22,9 +22,19 @@ class ChannelAvatarGetListResponse extends \Google\Protobuf\Internal\Message
      */
     private $avatar;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\Avatar[]|\Google\Protobuf\Internal\RepeatedField $avatar
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelAvatarGetList::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -16,7 +16,7 @@ class ChannelGetDraft
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0a90020a154368616e6e656c47657444726166742e70726f746f12057072" .
             "6f746f1a0e526573706f6e73652e70726f746f1a0c476c6f62616c2e7072" .

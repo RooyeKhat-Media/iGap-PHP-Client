@@ -4,42 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\SignalingLeaveResponse\Type</code>
- */
-class SignalingLeaveResponse_Type
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>MISSED = 0;</code>
+     * This class is deprecated. Use Proto\SignalingLeaveResponse\Type instead.
+     * @deprecated
      */
-    const MISSED = 0;
-    /**
-     * Generated from protobuf enum <code>REJECTED = 1;</code>
-     */
-    const REJECTED = 1;
-    /**
-     * Generated from protobuf enum <code>ACCEPTED = 2;</code>
-     */
-    const ACCEPTED = 2;
-    /**
-     * Generated from protobuf enum <code>NOT_ANSWERED = 3;</code>
-     */
-    const NOT_ANSWERED = 3;
-    /**
-     * Generated from protobuf enum <code>UNAVAILABLE = 4;</code>
-     */
-    const UNAVAILABLE = 4;
-    /**
-     * Generated from protobuf enum <code>DISCONNECTED = 5;</code>
-     */
-    const DISCONNECTED = 5;
-    /**
-     * Generated from protobuf enum <code>FINISHED = 6;</code>
-     */
-    const FINISHED = 6;
-    /**
-     * Generated from protobuf enum <code>TOO_LONG = 7;</code>
-     */
-    const TOO_LONG = 7;
+    class SignalingLeaveResponse_Type {}
 }
+class_exists(SignalingLeaveResponse\Type::class);
+@trigger_error('Proto\SignalingLeaveResponse_Type is deprecated and will be removed in the next major release. Use Proto\SignalingLeaveResponse\Type instead', E_USER_DEPRECATED);
 

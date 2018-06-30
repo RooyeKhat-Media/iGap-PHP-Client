@@ -26,9 +26,20 @@ class UserRegister extends \Google\Protobuf\Internal\Message
      */
     private $country_code = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $phone_number
+     *     @type string $country_code
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserRegister::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

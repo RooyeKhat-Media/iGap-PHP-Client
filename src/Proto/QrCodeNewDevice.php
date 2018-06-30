@@ -50,9 +50,26 @@ class QrCodeNewDevice extends \Google\Protobuf\Internal\Message
      */
     private $device_name = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $app_name
+     *     @type int $app_id
+     *     @type int $app_build_version
+     *     @type string $app_version
+     *     @type int $platform
+     *     @type string $platform_version
+     *     @type int $device
+     *     @type string $device_name
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\QrCodeNewDevice::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

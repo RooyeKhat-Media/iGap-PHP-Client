@@ -22,9 +22,19 @@ class ClientCondition extends \Google\Protobuf\Internal\Message
      */
     private $rooms;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type \Proto\ClientCondition\Room[]|\Google\Protobuf\Internal\RepeatedField $rooms
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientCondition::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class ClientCondition extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.ClientCondition.Room rooms = 2;</code>
-     * @param \Proto\ClientCondition_Room[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\ClientCondition\Room[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setRooms($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ClientCondition_Room::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ClientCondition\Room::class);
         $this->rooms = $arr;
 
         return $this;

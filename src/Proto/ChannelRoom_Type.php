@@ -4,18 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ChannelRoom\Type</code>
- */
-class ChannelRoom_Type
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>PRIVATE_ROOM = 0;</code>
+     * This class is deprecated. Use Proto\ChannelRoom\Type instead.
+     * @deprecated
      */
-    const PRIVATE_ROOM = 0;
-    /**
-     * Generated from protobuf enum <code>PUBLIC_ROOM = 1;</code>
-     */
-    const PUBLIC_ROOM = 1;
+    class ChannelRoom_Type {}
 }
+class_exists(ChannelRoom\Type::class);
+@trigger_error('Proto\ChannelRoom_Type is deprecated and will be removed in the next major release. Use Proto\ChannelRoom\Type instead', E_USER_DEPRECATED);
 

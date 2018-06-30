@@ -30,9 +30,21 @@ class GroupAddMemberResponse extends \Google\Protobuf\Internal\Message
      */
     private $role = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int|string $user_id
+     *     @type int $role
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupAddMember::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

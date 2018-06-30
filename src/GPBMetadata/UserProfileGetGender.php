@@ -16,7 +16,7 @@ class UserProfileGetGender
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0a91020a1a5573657250726f66696c6547657447656e6465722e70726f74" .
             "6f120570726f746f1a0e526573706f6e73652e70726f746f1a0c476c6f62" .

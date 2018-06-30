@@ -4,30 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ClientRoomReport\Reason</code>
- */
-class ClientRoomReport_Reason
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>OTHER = 0;</code>
+     * This class is deprecated. Use Proto\ClientRoomReport\Reason instead.
+     * @deprecated
      */
-    const OTHER = 0;
-    /**
-     * Generated from protobuf enum <code>SPAM = 1;</code>
-     */
-    const SPAM = 1;
-    /**
-     * Generated from protobuf enum <code>PORNOGRAPHY = 2;</code>
-     */
-    const PORNOGRAPHY = 2;
-    /**
-     * Generated from protobuf enum <code>VIOLENCE = 3;</code>
-     */
-    const VIOLENCE = 3;
-    /**
-     * Generated from protobuf enum <code>ABUSE = 4;</code>
-     */
-    const ABUSE = 4;
+    class ClientRoomReport_Reason {}
 }
+class_exists(ClientRoomReport\Reason::class);
+@trigger_error('Proto\ClientRoomReport_Reason is deprecated and will be removed in the next major release. Use Proto\ClientRoomReport\Reason instead', E_USER_DEPRECATED);
 

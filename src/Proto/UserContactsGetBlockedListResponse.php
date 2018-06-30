@@ -22,9 +22,19 @@ class UserContactsGetBlockedListResponse extends \Google\Protobuf\Internal\Messa
      */
     private $user;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\UserContactsGetBlockedListResponse\User[]|\Google\Protobuf\Internal\RepeatedField $user
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserContactsGetBlockedList::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class UserContactsGetBlockedListResponse extends \Google\Protobuf\Internal\Messa
 
     /**
      * Generated from protobuf field <code>repeated .proto.UserContactsGetBlockedListResponse.User user = 2;</code>
-     * @param \Proto\UserContactsGetBlockedListResponse_User[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\UserContactsGetBlockedListResponse\User[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setUser($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserContactsGetBlockedListResponse_User::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserContactsGetBlockedListResponse\User::class);
         $this->user = $arr;
 
         return $this;

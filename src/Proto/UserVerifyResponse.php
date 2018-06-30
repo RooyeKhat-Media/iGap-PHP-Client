@@ -26,9 +26,20 @@ class UserVerifyResponse extends \Google\Protobuf\Internal\Message
      */
     private $new_user = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $token
+     *     @type bool $new_user
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserVerify::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

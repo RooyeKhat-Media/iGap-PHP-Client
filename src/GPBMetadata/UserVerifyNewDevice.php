@@ -16,7 +16,7 @@ class UserVerifyNewDevice
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0ae0030a19557365725665726966794e65774465766963652e70726f746f" .
             "120570726f746f1a0e526573706f6e73652e70726f746f1a0c476c6f6261" .

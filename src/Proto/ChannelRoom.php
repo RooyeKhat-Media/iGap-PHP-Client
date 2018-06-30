@@ -66,9 +66,30 @@ class ChannelRoom extends \Google\Protobuf\Internal\Message
      */
     private $reaction_status = false;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $type
+     *     @type int $role
+     *     @type int $participants_count
+     *     @type string $participants_count_label
+     *     @type string $description
+     *     @type int $avatar_count
+     *     @type \Proto\Avatar $avatar
+     *     @type \Proto\ChannelRoom\PrivateExtra $private_extra
+     *     @type \Proto\ChannelRoom\PublicExtra $public_extra
+     *     @type bool $signature
+     *     @type int|string $seen_id
+     *     @type bool $verified
+     *     @type bool $reaction_status
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**
@@ -227,7 +248,7 @@ class ChannelRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.ChannelRoom.PrivateExtra private_extra = 8;</code>
-     * @return \Proto\ChannelRoom_PrivateExtra
+     * @return \Proto\ChannelRoom\PrivateExtra
      */
     public function getPrivateExtra()
     {
@@ -236,7 +257,7 @@ class ChannelRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.ChannelRoom.PrivateExtra private_extra = 8;</code>
-     * @param \Proto\ChannelRoom_PrivateExtra $var
+     * @param \Proto\ChannelRoom\PrivateExtra $var
      * @return $this
      */
     public function setPrivateExtra($var)
@@ -249,7 +270,7 @@ class ChannelRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.ChannelRoom.PublicExtra public_extra = 9;</code>
-     * @return \Proto\ChannelRoom_PublicExtra
+     * @return \Proto\ChannelRoom\PublicExtra
      */
     public function getPublicExtra()
     {
@@ -258,7 +279,7 @@ class ChannelRoom extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.proto.ChannelRoom.PublicExtra public_extra = 9;</code>
-     * @param \Proto\ChannelRoom_PublicExtra $var
+     * @param \Proto\ChannelRoom\PublicExtra $var
      * @return $this
      */
     public function setPublicExtra($var)

@@ -22,9 +22,19 @@ class UserProfileSetNickname extends \Google\Protobuf\Internal\Message
      */
     private $nickname = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $nickname
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserProfileSetNickname::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

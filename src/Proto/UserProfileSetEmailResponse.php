@@ -22,9 +22,19 @@ class UserProfileSetEmailResponse extends \Google\Protobuf\Internal\Message
      */
     private $email = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $email
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserProfileSetEmail::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

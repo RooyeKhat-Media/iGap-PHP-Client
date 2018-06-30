@@ -26,9 +26,20 @@ class UserProfileSetNicknameResponse extends \Google\Protobuf\Internal\Message
      */
     private $initials = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $nickname
+     *     @type string $initials
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserProfileSetNickname::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

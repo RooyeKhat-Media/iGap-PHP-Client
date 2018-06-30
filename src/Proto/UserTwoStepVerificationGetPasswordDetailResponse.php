@@ -38,9 +38,23 @@ class UserTwoStepVerificationGetPasswordDetailResponse extends \Google\Protobuf\
      */
     private $unconfirmed_email_pattern = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $question_one
+     *     @type string $question_two
+     *     @type string $hint
+     *     @type bool $has_confirmed_recovery_email
+     *     @type string $unconfirmed_email_pattern
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationGetPasswordDetail::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

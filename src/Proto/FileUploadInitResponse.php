@@ -34,9 +34,22 @@ class FileUploadInitResponse extends \Google\Protobuf\Internal\Message
      */
     private $limit = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $token
+     *     @type float $progress
+     *     @type int|string $offset
+     *     @type int $limit
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\FileUploadInit::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

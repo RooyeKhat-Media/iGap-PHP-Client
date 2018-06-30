@@ -18,9 +18,18 @@ class UserTwoStepVerificationChangeHintResponse extends \Google\Protobuf\Interna
      */
     private $response = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationChangeHint::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

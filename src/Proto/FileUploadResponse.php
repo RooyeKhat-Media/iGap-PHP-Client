@@ -30,9 +30,21 @@ class FileUploadResponse extends \Google\Protobuf\Internal\Message
      */
     private $next_limit = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type float $progress
+     *     @type int|string $next_offset
+     *     @type int $next_limit
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\FileUpload::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
