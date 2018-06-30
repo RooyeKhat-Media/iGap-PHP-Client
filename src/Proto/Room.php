@@ -82,9 +82,34 @@ class Room extends \Google\Protobuf\Internal\Message
      */
     private $channel_room_extra = null;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int|string $id
+     *     @type int $type
+     *     @type string $title
+     *     @type string $initials
+     *     @type string $color
+     *     @type int $unread_count
+     *     @type \Proto\RoomMessage $last_message
+     *     @type bool $read_only
+     *     @type bool $is_participant
+     *     @type \Proto\RoomDraft $draft
+     *     @type \Proto\RoomMessage $first_unread_message
+     *     @type int $room_mute
+     *     @type int|string $pin_id
+     *     @type \Proto\RoomMessage $pinned_message
+     *     @type \Proto\ChatRoom $chat_room_extra
+     *     @type \Proto\GroupRoom $group_room_extra
+     *     @type \Proto\ChannelRoom $channel_room_extra
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

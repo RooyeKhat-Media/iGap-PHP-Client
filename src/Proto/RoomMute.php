@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\RoomMute</code>
+ * Protobuf type <code>proto.RoomMute</code>
  */
 class RoomMute
 {

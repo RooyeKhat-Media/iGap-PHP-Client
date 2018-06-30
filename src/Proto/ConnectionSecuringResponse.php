@@ -38,9 +38,23 @@ class ConnectionSecuringResponse extends \Google\Protobuf\Internal\Message
      */
     private $secondary_chunk_size = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $public_key
+     *     @type int $symmetric_key_length
+     *     @type int $heartbeat_interval
+     *     @type string $primary_node_name
+     *     @type int $secondary_chunk_size
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ConnectionSecuring::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

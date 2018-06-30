@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\ClientAction</code>
+ * Protobuf type <code>proto.ClientAction</code>
  */
 class ClientAction
 {

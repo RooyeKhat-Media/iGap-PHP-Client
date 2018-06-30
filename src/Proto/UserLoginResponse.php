@@ -34,9 +34,22 @@ class UserLoginResponse extends \Google\Protobuf\Internal\Message
      */
     private $chat_delete_message_for_both_period = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type bool $deprecated_client
+     *     @type string $secondary_node_name
+     *     @type bool $update_available
+     *     @type int $chat_delete_message_for_both_period
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserLogin::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

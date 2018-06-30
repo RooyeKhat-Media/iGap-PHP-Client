@@ -18,9 +18,18 @@ class Request extends \Google\Protobuf\Internal\Message
      */
     private $id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\Request::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

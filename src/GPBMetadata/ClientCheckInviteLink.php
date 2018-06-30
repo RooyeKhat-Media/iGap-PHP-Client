@@ -16,7 +16,7 @@ class ClientCheckInviteLink
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0aa7020a1b436c69656e74436865636b496e766974654c696e6b2e70726f" .
             "746f120570726f746f1a0e526573706f6e73652e70726f746f1a0c476c6f" .

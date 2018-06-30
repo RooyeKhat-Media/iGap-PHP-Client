@@ -30,9 +30,21 @@ class ClientSearchRoomHistoryResponse extends \Google\Protobuf\Internal\Message
      */
     private $result;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $totalCount
+     *     @type int $notDeletedCount
+     *     @type \Proto\RoomMessage[]|\Google\Protobuf\Internal\RepeatedField $result
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientSearchRoomHistory::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

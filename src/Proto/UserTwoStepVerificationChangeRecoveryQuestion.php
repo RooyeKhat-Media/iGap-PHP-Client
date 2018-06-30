@@ -38,9 +38,23 @@ class UserTwoStepVerificationChangeRecoveryQuestion extends \Google\Protobuf\Int
      */
     private $answer_two = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $password
+     *     @type string $question_one
+     *     @type string $answer_one
+     *     @type string $question_two
+     *     @type string $answer_two
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationChangeRecoveryQuestion::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

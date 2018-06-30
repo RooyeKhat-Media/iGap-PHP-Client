@@ -22,9 +22,19 @@ class UserTwoStepVerificationUnsetPassword extends \Google\Protobuf\Internal\Mes
      */
     private $password = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $password
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationUnsetPassword::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

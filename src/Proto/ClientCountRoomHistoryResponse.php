@@ -50,9 +50,26 @@ class ClientCountRoomHistoryResponse extends \Google\Protobuf\Internal\Message
      */
     private $url = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $media
+     *     @type int $image
+     *     @type int $video
+     *     @type int $audio
+     *     @type int $voice
+     *     @type int $gif
+     *     @type int $file
+     *     @type int $url
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientCountRoomHistory::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

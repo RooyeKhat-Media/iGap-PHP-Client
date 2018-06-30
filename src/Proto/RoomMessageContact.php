@@ -34,9 +34,22 @@ class RoomMessageContact extends \Google\Protobuf\Internal\Message
      */
     private $email;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $first_name
+     *     @type string $last_name
+     *     @type string $nickname
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $phone
+     *     @type string[]|\Google\Protobuf\Internal\RepeatedField $email
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

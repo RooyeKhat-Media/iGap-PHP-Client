@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\FileUploadStatusResponse\Status</code>
- */
-class FileUploadStatusResponse_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>UPLOADING = 0;</code>
+     * This class is deprecated. Use Proto\FileUploadStatusResponse\Status instead.
+     * @deprecated
      */
-    const UPLOADING = 0;
-    /**
-     * Generated from protobuf enum <code>PROCESSING = 1;</code>
-     */
-    const PROCESSING = 1;
-    /**
-     * Generated from protobuf enum <code>PROCESSED = 2;</code>
-     */
-    const PROCESSED = 2;
-    /**
-     * Generated from protobuf enum <code>CORRUPTED = 3;</code>
-     */
-    const CORRUPTED = 3;
+    class FileUploadStatusResponse_Status {}
 }
+class_exists(FileUploadStatusResponse\Status::class);
+@trigger_error('Proto\FileUploadStatusResponse_Status is deprecated and will be removed in the next major release. Use Proto\FileUploadStatusResponse\Status instead', E_USER_DEPRECATED);
 

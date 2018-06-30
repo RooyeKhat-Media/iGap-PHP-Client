@@ -4,98 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.RoomMessage.Author</code>
- */
-class RoomMessage_Author extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>string hash = 1;</code>
+     * This class is deprecated. Use Proto\RoomMessage\Author instead.
+     * @deprecated
      */
-    private $hash = '';
-    /**
-     * Generated from protobuf field <code>.proto.RoomMessage.Author.User user = 2;</code>
-     */
-    private $user = null;
-    /**
-     * Generated from protobuf field <code>.proto.RoomMessage.Author.Room room = 3;</code>
-     */
-    private $room = null;
-
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>string hash = 1;</code>
-     * @return string
-     */
-    public function getHash()
-    {
-        return $this->hash;
-    }
-
-    /**
-     * Generated from protobuf field <code>string hash = 1;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setHash($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->hash = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.proto.RoomMessage.Author.User user = 2;</code>
-     * @return \Proto\RoomMessage_Author_User
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
-     * Generated from protobuf field <code>.proto.RoomMessage.Author.User user = 2;</code>
-     * @param \Proto\RoomMessage_Author_User $var
-     * @return $this
-     */
-    public function setUser($var)
-    {
-        GPBUtil::checkMessage($var, \Proto\RoomMessage_Author_User::class);
-        $this->user = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>.proto.RoomMessage.Author.Room room = 3;</code>
-     * @return \Proto\RoomMessage_Author_Room
-     */
-    public function getRoom()
-    {
-        return $this->room;
-    }
-
-    /**
-     * Generated from protobuf field <code>.proto.RoomMessage.Author.Room room = 3;</code>
-     * @param \Proto\RoomMessage_Author_Room $var
-     * @return $this
-     */
-    public function setRoom($var)
-    {
-        GPBUtil::checkMessage($var, \Proto\RoomMessage_Author_Room::class);
-        $this->room = $var;
-
-        return $this;
-    }
-
+    class RoomMessage_Author {}
 }
+class_exists(RoomMessage\Author::class);
+@trigger_error('Proto\RoomMessage_Author is deprecated and will be removed in the next major release. Use Proto\RoomMessage\Author instead', E_USER_DEPRECATED);
 

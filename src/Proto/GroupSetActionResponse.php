@@ -30,9 +30,21 @@ class GroupSetActionResponse extends \Google\Protobuf\Internal\Message
      */
     private $user_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int $action
+     *     @type int|string $user_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupSetAction::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

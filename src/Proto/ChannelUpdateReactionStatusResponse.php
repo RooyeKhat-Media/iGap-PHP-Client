@@ -26,9 +26,20 @@ class ChannelUpdateReactionStatusResponse extends \Google\Protobuf\Internal\Mess
      */
     private $reaction_status = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type bool $reaction_status
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelUpdateReactionStatus::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

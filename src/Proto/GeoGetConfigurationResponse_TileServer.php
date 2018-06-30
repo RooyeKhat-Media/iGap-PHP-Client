@@ -4,46 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.GeoGetConfigurationResponse.TileServer</code>
- */
-class GeoGetConfigurationResponse_TileServer extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>string base_url = 1;</code>
+     * This class is deprecated. Use Proto\GeoGetConfigurationResponse\TileServer instead.
+     * @deprecated
      */
-    private $base_url = '';
-
-    public function __construct() {
-        \GPBMetadata\GeoGetConfiguration::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>string base_url = 1;</code>
-     * @return string
-     */
-    public function getBaseUrl()
-    {
-        return $this->base_url;
-    }
-
-    /**
-     * Generated from protobuf field <code>string base_url = 1;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setBaseUrl($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->base_url = $var;
-
-        return $this;
-    }
-
+    class GeoGetConfigurationResponse_TileServer {}
 }
+class_exists(GeoGetConfigurationResponse\TileServer::class);
+@trigger_error('Proto\GeoGetConfigurationResponse_TileServer is deprecated and will be removed in the next major release. Use Proto\GeoGetConfigurationResponse\TileServer instead', E_USER_DEPRECATED);
 

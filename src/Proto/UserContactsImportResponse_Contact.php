@@ -4,72 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.UserContactsImportResponse.Contact</code>
- */
-class UserContactsImportResponse_Contact extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>string client_id = 1;</code>
+     * This class is deprecated. Use Proto\UserContactsImportResponse\Contact instead.
+     * @deprecated
      */
-    private $client_id = '';
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 2;</code>
-     */
-    private $user_id = 0;
-
-    public function __construct() {
-        \GPBMetadata\UserContactsImport::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>string client_id = 1;</code>
-     * @return string
-     */
-    public function getClientId()
-    {
-        return $this->client_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string client_id = 1;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setClientId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->client_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 2;</code>
-     * @return int|string
-     */
-    public function getUserId()
-    {
-        return $this->user_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 2;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->user_id = $var;
-
-        return $this;
-    }
-
+    class UserContactsImportResponse_Contact {}
 }
+class_exists(UserContactsImportResponse\Contact::class);
+@trigger_error('Proto\UserContactsImportResponse_Contact is deprecated and will be removed in the next major release. Use Proto\UserContactsImportResponse\Contact instead', E_USER_DEPRECATED);
 

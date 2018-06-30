@@ -30,9 +30,21 @@ class ChatDeleteMessage extends \Google\Protobuf\Internal\Message
      */
     private $both = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type int|string $message_id
+     *     @type bool $both
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChatDeleteMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -22,9 +22,19 @@ class ChannelGetMemberListResponse extends \Google\Protobuf\Internal\Message
      */
     private $member;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\ChannelGetMemberListResponse\Member[]|\Google\Protobuf\Internal\RepeatedField $member
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelGetMemberList::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class ChannelGetMemberListResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.ChannelGetMemberListResponse.Member member = 2;</code>
-     * @param \Proto\ChannelGetMemberListResponse_Member[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\ChannelGetMemberListResponse\Member[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setMember($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ChannelGetMemberListResponse_Member::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\ChannelGetMemberListResponse\Member::class);
         $this->member = $arr;
 
         return $this;

@@ -5,7 +5,7 @@
 namespace Proto;
 
 /**
- * Protobuf enum <code>Proto\Language</code>
+ * Protobuf type <code>proto.Language</code>
  */
 class Language
 {

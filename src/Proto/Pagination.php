@@ -22,9 +22,19 @@ class Pagination extends \Google\Protobuf\Internal\Message
      */
     private $limit = 0;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type int $offset
+     *     @type int $limit
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

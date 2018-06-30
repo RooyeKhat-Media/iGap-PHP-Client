@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ChannelRoom\Role</code>
- */
-class ChannelRoom_Role
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>MEMBER = 0;</code>
+     * This class is deprecated. Use Proto\ChannelRoom\Role instead.
+     * @deprecated
      */
-    const MEMBER = 0;
-    /**
-     * Generated from protobuf enum <code>MODERATOR = 1;</code>
-     */
-    const MODERATOR = 1;
-    /**
-     * Generated from protobuf enum <code>ADMIN = 2;</code>
-     */
-    const ADMIN = 2;
-    /**
-     * Generated from protobuf enum <code>OWNER = 3;</code>
-     */
-    const OWNER = 3;
+    class ChannelRoom_Role {}
 }
+class_exists(ChannelRoom\Role::class);
+@trigger_error('Proto\ChannelRoom_Role is deprecated and will be removed in the next major release. Use Proto\ChannelRoom\Role instead', E_USER_DEPRECATED);
 

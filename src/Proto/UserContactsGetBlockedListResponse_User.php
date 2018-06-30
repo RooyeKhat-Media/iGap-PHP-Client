@@ -4,72 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.UserContactsGetBlockedListResponse.User</code>
- */
-class UserContactsGetBlockedListResponse_User extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
+     * This class is deprecated. Use Proto\UserContactsGetBlockedListResponse\User instead.
+     * @deprecated
      */
-    private $user_id = 0;
-    /**
-     * Generated from protobuf field <code>string cache_id = 2;</code>
-     */
-    private $cache_id = '';
-
-    public function __construct() {
-        \GPBMetadata\UserContactsGetBlockedList::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @return int|string
-     */
-    public function getUserId()
-    {
-        return $this->user_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->user_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string cache_id = 2;</code>
-     * @return string
-     */
-    public function getCacheId()
-    {
-        return $this->cache_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string cache_id = 2;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setCacheId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->cache_id = $var;
-
-        return $this;
-    }
-
+    class UserContactsGetBlockedListResponse_User {}
 }
+class_exists(UserContactsGetBlockedListResponse\User::class);
+@trigger_error('Proto\UserContactsGetBlockedListResponse_User is deprecated and will be removed in the next major release. Use Proto\UserContactsGetBlockedListResponse\User instead', E_USER_DEPRECATED);
 

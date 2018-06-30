@@ -16,7 +16,7 @@ class ChannelEditMessage
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0a9e030a184368616e6e656c456469744d6573736167652e70726f746f12" .
             "0570726f746f1a0e526573706f6e73652e70726f746f1a0c476c6f62616c" .

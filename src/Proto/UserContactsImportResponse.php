@@ -22,9 +22,19 @@ class UserContactsImportResponse extends \Google\Protobuf\Internal\Message
      */
     private $registered_contacts;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\UserContactsImportResponse\Contact[]|\Google\Protobuf\Internal\RepeatedField $registered_contacts
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserContactsImport::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class UserContactsImportResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.UserContactsImportResponse.Contact registered_contacts = 2;</code>
-     * @param \Proto\UserContactsImportResponse_Contact[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\UserContactsImportResponse\Contact[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setRegisteredContacts($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserContactsImportResponse_Contact::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserContactsImportResponse\Contact::class);
         $this->registered_contacts = $arr;
 
         return $this;

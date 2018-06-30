@@ -50,9 +50,26 @@ class UserTwoStepVerificationSetPassword extends \Google\Protobuf\Internal\Messa
      */
     private $hint = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $old_password
+     *     @type string $new_password
+     *     @type string $recovery_email
+     *     @type string $question_one
+     *     @type string $answer_one
+     *     @type string $question_two
+     *     @type string $answer_two
+     *     @type string $hint
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationSetPassword::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

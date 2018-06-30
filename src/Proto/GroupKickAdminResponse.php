@@ -26,9 +26,20 @@ class GroupKickAdminResponse extends \Google\Protobuf\Internal\Message
      */
     private $member_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int|string $member_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupKickAdmin::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

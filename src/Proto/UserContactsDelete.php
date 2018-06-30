@@ -22,9 +22,19 @@ class UserContactsDelete extends \Google\Protobuf\Internal\Message
      */
     private $phone = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $phone
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserContactsDelete::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

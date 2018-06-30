@@ -22,9 +22,19 @@ class ChannelAddMessageReactionResponse extends \Google\Protobuf\Internal\Messag
      */
     private $reaction_counter_label = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $reaction_counter_label
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChannelAddMessageReaction::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

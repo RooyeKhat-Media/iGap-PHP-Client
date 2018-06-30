@@ -34,9 +34,22 @@ class ClientGetRoomHistory extends \Google\Protobuf\Internal\Message
      */
     private $limit = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type int|string $first_message_id
+     *     @type int $direction
+     *     @type int $limit
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientGetRoomHistory::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -22,9 +22,19 @@ class SignalingSessionHoldResponse extends \Google\Protobuf\Internal\Message
      */
     private $hold = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type bool $hold
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingSessionHold::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

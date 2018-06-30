@@ -54,9 +54,27 @@ class UserVerifyNewDeviceResponse extends \Google\Protobuf\Internal\Message
      */
     private $two_step_verification = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $app_name
+     *     @type int $app_id
+     *     @type int $app_build_version
+     *     @type string $app_version
+     *     @type int $platform
+     *     @type string $platform_version
+     *     @type int $device
+     *     @type string $device_name
+     *     @type bool $two_step_verification
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserVerifyNewDevice::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

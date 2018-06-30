@@ -16,7 +16,7 @@ class UserLogin
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0abc040a0f557365724c6f67696e2e70726f746f120570726f746f1a0e52" .
             "6573706f6e73652e70726f746f1a0c476c6f62616c2e70726f746f22a102" .

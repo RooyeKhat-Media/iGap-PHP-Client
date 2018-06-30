@@ -22,9 +22,19 @@ class SignalingGetLogResponse extends \Google\Protobuf\Internal\Message
      */
     private $signaling_log;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\SignalingGetLogResponse\SignalingLog[]|\Google\Protobuf\Internal\RepeatedField $signaling_log
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingGetLog::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class SignalingGetLogResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.SignalingGetLogResponse.SignalingLog signaling_log = 2;</code>
-     * @param \Proto\SignalingGetLogResponse_SignalingLog[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\SignalingGetLogResponse\SignalingLog[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setSignalingLog($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\SignalingGetLogResponse_SignalingLog::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\SignalingGetLogResponse\SignalingLog::class);
         $this->signaling_log = $arr;
 
         return $this;

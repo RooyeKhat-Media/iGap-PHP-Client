@@ -4,18 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\RoomMessageLog\ExtraType</code>
- */
-class RoomMessageLog_ExtraType
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>NO_EXTRA = 0;</code>
+     * This class is deprecated. Use Proto\RoomMessageLog\ExtraType instead.
+     * @deprecated
      */
-    const NO_EXTRA = 0;
-    /**
-     * Generated from protobuf enum <code>TARGET_USER = 1;</code>
-     */
-    const TARGET_USER = 1;
+    class RoomMessageLog_ExtraType {}
 }
+class_exists(RoomMessageLog\ExtraType::class);
+@trigger_error('Proto\RoomMessageLog_ExtraType is deprecated and will be removed in the next major release. Use Proto\RoomMessageLog\ExtraType instead', E_USER_DEPRECATED);
 

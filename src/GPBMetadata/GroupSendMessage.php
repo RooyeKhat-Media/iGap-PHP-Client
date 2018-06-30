@@ -16,7 +16,7 @@ class GroupSendMessage
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0ab6040a1647726f757053656e644d6573736167652e70726f746f120570" .
             "726f746f1a0e526573706f6e73652e70726f746f1a0c476c6f62616c2e70" .

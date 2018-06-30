@@ -22,9 +22,19 @@ class InfoTimeResponse extends \Google\Protobuf\Internal\Message
      */
     private $timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\InfoTime::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

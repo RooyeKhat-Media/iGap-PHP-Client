@@ -22,9 +22,19 @@ class RoomMessageLocation extends \Google\Protobuf\Internal\Message
      */
     private $lon = 0.0;
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type float $lat
+     *     @type float $lon
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

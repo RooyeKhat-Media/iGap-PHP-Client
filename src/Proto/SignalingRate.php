@@ -30,9 +30,21 @@ class SignalingRate extends \Google\Protobuf\Internal\Message
      */
     private $reason = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $id
+     *     @type int $rate
+     *     @type string $reason
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingRate::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

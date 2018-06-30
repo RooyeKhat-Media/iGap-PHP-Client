@@ -34,9 +34,22 @@ class UserGetDeleteTokenResponse extends \Google\Protobuf\Internal\Message
      */
     private $token_length = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $resend_delay
+     *     @type int[]|string[]|\Google\Protobuf\Internal\RepeatedField $sms_number
+     *     @type string $token_regex
+     *     @type string $token_length
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserGetDeleteToken::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

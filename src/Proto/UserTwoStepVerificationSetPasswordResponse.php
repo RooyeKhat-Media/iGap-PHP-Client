@@ -22,9 +22,19 @@ class UserTwoStepVerificationSetPasswordResponse extends \Google\Protobuf\Intern
      */
     private $unconfirmed_email_pattern = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $unconfirmed_email_pattern
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationSetPassword::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

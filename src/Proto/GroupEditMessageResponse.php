@@ -38,9 +38,23 @@ class GroupEditMessageResponse extends \Google\Protobuf\Internal\Message
      */
     private $message_type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int|string $message_id
+     *     @type int|string $message_version
+     *     @type string $message
+     *     @type int $message_type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupEditMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

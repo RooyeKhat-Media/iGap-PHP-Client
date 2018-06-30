@@ -22,9 +22,19 @@ class QrCodeResolveResponse extends \Google\Protobuf\Internal\Message
      */
     private $qr_code_image = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $qr_code_image
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\QrCodeResolve::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

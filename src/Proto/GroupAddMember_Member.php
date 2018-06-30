@@ -4,72 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.GroupAddMember.Member</code>
- */
-class GroupAddMember_Member extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
+     * This class is deprecated. Use Proto\GroupAddMember\Member instead.
+     * @deprecated
      */
-    private $user_id = 0;
-    /**
-     * Generated from protobuf field <code>uint64 start_message_id = 2;</code>
-     */
-    private $start_message_id = 0;
-
-    public function __construct() {
-        \GPBMetadata\GroupAddMember::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @return int|string
-     */
-    public function getUserId()
-    {
-        return $this->user_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 user_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setUserId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->user_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 start_message_id = 2;</code>
-     * @return int|string
-     */
-    public function getStartMessageId()
-    {
-        return $this->start_message_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 start_message_id = 2;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setStartMessageId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->start_message_id = $var;
-
-        return $this;
-    }
-
+    class GroupAddMember_Member {}
 }
+class_exists(GroupAddMember\Member::class);
+@trigger_error('Proto\GroupAddMember_Member is deprecated and will be removed in the next major release. Use Proto\GroupAddMember\Member instead', E_USER_DEPRECATED);
 

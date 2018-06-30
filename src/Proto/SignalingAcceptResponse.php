@@ -22,9 +22,19 @@ class SignalingAcceptResponse extends \Google\Protobuf\Internal\Message
      */
     private $called_sdp = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $called_sdp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingAccept::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

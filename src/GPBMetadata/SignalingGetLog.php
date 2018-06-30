@@ -16,7 +16,7 @@ class SignalingGetLog
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         \GPBMetadata\SignalingOffer::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0af6040a155369676e616c696e674765744c6f672e70726f746f12057072" .

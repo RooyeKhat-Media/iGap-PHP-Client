@@ -22,9 +22,19 @@ class UserTwoStepVerificationVerifyPasswordResponse extends \Google\Protobuf\Int
      */
     private $token = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $token
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationVerifyPassword::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

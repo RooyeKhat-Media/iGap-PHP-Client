@@ -22,9 +22,19 @@ class UserAvatarGetList extends \Google\Protobuf\Internal\Message
      */
     private $user_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $user_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserAvatarGetList::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -22,9 +22,19 @@ class InfoCountry extends \Google\Protobuf\Internal\Message
      */
     private $iso_code = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $iso_code
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\InfoCountry::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

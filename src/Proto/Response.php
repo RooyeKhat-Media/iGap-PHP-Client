@@ -22,9 +22,19 @@ class Response extends \Google\Protobuf\Internal\Message
      */
     private $timestamp = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $id
+     *     @type int $timestamp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\Response::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

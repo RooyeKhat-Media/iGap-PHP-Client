@@ -30,9 +30,21 @@ class ChatDeleteMessageResponse extends \Google\Protobuf\Internal\Message
      */
     private $delete_version = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int|string $room_id
+     *     @type int|string $message_id
+     *     @type int|string $delete_version
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ChatDeleteMessage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

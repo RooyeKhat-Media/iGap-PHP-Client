@@ -16,7 +16,7 @@ class ChatSendMessage
         }
         \GPBMetadata\Request::initOnce();
         \GPBMetadata\Response::initOnce();
-        \GPBMetadata\Global::initOnce();
+        \GPBMetadata\PBGlobal::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0ab2040a154368617453656e644d6573736167652e70726f746f12057072" .
             "6f746f1a0e526573706f6e73652e70726f746f1a0c476c6f62616c2e7072" .

@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\FileDownload\Selector</code>
- */
-class FileDownload_Selector
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>FILE = 0;</code>
+     * This class is deprecated. Use Proto\FileDownload\Selector instead.
+     * @deprecated
      */
-    const FILE = 0;
-    /**
-     * Generated from protobuf enum <code>SMALL_THUMBNAIL = 1;</code>
-     */
-    const SMALL_THUMBNAIL = 1;
-    /**
-     * Generated from protobuf enum <code>LARGE_THUMBNAIL = 2;</code>
-     */
-    const LARGE_THUMBNAIL = 2;
-    /**
-     * Generated from protobuf enum <code>WAVEFORM_THUMBNAIL = 3;</code>
-     */
-    const WAVEFORM_THUMBNAIL = 3;
+    class FileDownload_Selector {}
 }
+class_exists(FileDownload\Selector::class);
+@trigger_error('Proto\FileDownload_Selector is deprecated and will be removed in the next major release. Use Proto\FileDownload\Selector instead', E_USER_DEPRECATED);
 

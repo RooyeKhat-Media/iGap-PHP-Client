@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\UserReport\Reason</code>
- */
-class UserReport_Reason
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>OTHER = 0;</code>
+     * This class is deprecated. Use Proto\UserReport\Reason instead.
+     * @deprecated
      */
-    const OTHER = 0;
-    /**
-     * Generated from protobuf enum <code>SPAM = 1;</code>
-     */
-    const SPAM = 1;
-    /**
-     * Generated from protobuf enum <code>ABUSE = 2;</code>
-     */
-    const ABUSE = 2;
-    /**
-     * Generated from protobuf enum <code>FAKE_ACCOUNT = 3;</code>
-     */
-    const FAKE_ACCOUNT = 3;
+    class UserReport_Reason {}
 }
+class_exists(UserReport\Reason::class);
+@trigger_error('Proto\UserReport_Reason is deprecated and will be removed in the next major release. Use Proto\UserReport\Reason instead', E_USER_DEPRECATED);
 

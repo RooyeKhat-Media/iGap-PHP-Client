@@ -4,26 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ChannelCheckUsernameResponse\Status</code>
- */
-class ChannelCheckUsernameResponse_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>INVALID = 0;</code>
+     * This class is deprecated. Use Proto\ChannelCheckUsernameResponse\Status instead.
+     * @deprecated
      */
-    const INVALID = 0;
-    /**
-     * Generated from protobuf enum <code>TAKEN = 1;</code>
-     */
-    const TAKEN = 1;
-    /**
-     * Generated from protobuf enum <code>AVAILABLE = 2;</code>
-     */
-    const AVAILABLE = 2;
-    /**
-     * Generated from protobuf enum <code>OCCUPYING_LIMIT_EXCEEDED = 3;</code>
-     */
-    const OCCUPYING_LIMIT_EXCEEDED = 3;
+    class ChannelCheckUsernameResponse_Status {}
 }
+class_exists(ChannelCheckUsernameResponse\Status::class);
+@trigger_error('Proto\ChannelCheckUsernameResponse_Status is deprecated and will be removed in the next major release. Use Proto\ChannelCheckUsernameResponse\Status instead', E_USER_DEPRECATED);
 

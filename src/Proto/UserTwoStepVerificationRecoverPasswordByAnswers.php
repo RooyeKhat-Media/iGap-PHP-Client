@@ -26,9 +26,20 @@ class UserTwoStepVerificationRecoverPasswordByAnswers extends \Google\Protobuf\I
      */
     private $answer_two = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $answer_one
+     *     @type string $answer_two
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationRecoverPasswordByAnswers::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

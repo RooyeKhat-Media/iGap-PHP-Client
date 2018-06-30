@@ -4,72 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.ClientCondition.Room.OfflineEdited</code>
- */
-class ClientCondition_Room_OfflineEdited extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
+     * This class is deprecated. Use Proto\ClientCondition\Room\OfflineEdited instead.
+     * @deprecated
      */
-    private $message_id = 0;
-    /**
-     * Generated from protobuf field <code>string message = 2;</code>
-     */
-    private $message = '';
-
-    public function __construct() {
-        \GPBMetadata\ClientCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
-     * @return int|string
-     */
-    public function getMessageId()
-    {
-        return $this->message_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setMessageId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->message_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string message = 2;</code>
-     * @return string
-     */
-    public function getMessage()
-    {
-        return $this->message;
-    }
-
-    /**
-     * Generated from protobuf field <code>string message = 2;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setMessage($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->message = $var;
-
-        return $this;
-    }
-
+    class ClientCondition_Room_OfflineEdited {}
 }
+class_exists(ClientCondition\Room\OfflineEdited::class);
+@trigger_error('Proto\ClientCondition_Room_OfflineEdited is deprecated and will be removed in the next major release. Use Proto\ClientCondition\Room\OfflineEdited instead', E_USER_DEPRECATED);
 

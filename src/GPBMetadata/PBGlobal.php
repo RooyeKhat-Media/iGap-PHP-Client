@@ -4,7 +4,7 @@
 
 namespace GPBMetadata;
 
-class Global
+class PBGlobal
 {
     public static $is_initialized = false;
 

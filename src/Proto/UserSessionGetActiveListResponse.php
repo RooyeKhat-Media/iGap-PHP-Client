@@ -22,9 +22,19 @@ class UserSessionGetActiveListResponse extends \Google\Protobuf\Internal\Message
      */
     private $session;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\UserSessionGetActiveListResponse\Session[]|\Google\Protobuf\Internal\RepeatedField $session
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserSessionGetActiveList::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
@@ -60,12 +70,12 @@ class UserSessionGetActiveListResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .proto.UserSessionGetActiveListResponse.Session session = 2;</code>
-     * @param \Proto\UserSessionGetActiveListResponse_Session[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Proto\UserSessionGetActiveListResponse\Session[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setSession($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserSessionGetActiveListResponse_Session::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Proto\UserSessionGetActiveListResponse\Session::class);
         $this->session = $arr;
 
         return $this;

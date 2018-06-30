@@ -22,9 +22,19 @@ class UserProfileGetBioResponse extends \Google\Protobuf\Internal\Message
      */
     private $bio = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type string $bio
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserProfileGetBio::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

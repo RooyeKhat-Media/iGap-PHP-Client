@@ -22,9 +22,19 @@ class Wallpaper extends \Google\Protobuf\Internal\Message
      */
     private $color = '';
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\File $file
+     *     @type string $color
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

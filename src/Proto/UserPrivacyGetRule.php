@@ -22,9 +22,19 @@ class UserPrivacyGetRule extends \Google\Protobuf\Internal\Message
      */
     private $type = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int $type
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserPrivacyGetRule::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

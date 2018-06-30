@@ -4,22 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ClientCondition\Room\OfflineMute</code>
- */
-class ClientCondition_Room_OfflineMute
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>UNCHANGED = 0;</code>
+     * This class is deprecated. Use Proto\ClientCondition\Room\OfflineMute instead.
+     * @deprecated
      */
-    const UNCHANGED = 0;
-    /**
-     * Generated from protobuf enum <code>MUTED = 1;</code>
-     */
-    const MUTED = 1;
-    /**
-     * Generated from protobuf enum <code>UNMUTED = 2;</code>
-     */
-    const UNMUTED = 2;
+    class ClientCondition_Room_OfflineMute {}
 }
+class_exists(ClientCondition\Room\OfflineMute::class);
+@trigger_error('Proto\ClientCondition_Room_OfflineMute is deprecated and will be removed in the next major release. Use Proto\ClientCondition\Room\OfflineMute instead', E_USER_DEPRECATED);
 

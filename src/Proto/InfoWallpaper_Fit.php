@@ -4,22 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\InfoWallpaper\Fit</code>
- */
-class InfoWallpaper_Fit
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>PHONE = 0;</code>
+     * This class is deprecated. Use Proto\InfoWallpaper\Fit instead.
+     * @deprecated
      */
-    const PHONE = 0;
-    /**
-     * Generated from protobuf enum <code>TABLET = 1;</code>
-     */
-    const TABLET = 1;
-    /**
-     * Generated from protobuf enum <code>DESKTOP = 2;</code>
-     */
-    const DESKTOP = 2;
+    class InfoWallpaper_Fit {}
 }
+class_exists(InfoWallpaper\Fit::class);
+@trigger_error('Proto\InfoWallpaper_Fit is deprecated and will be removed in the next major release. Use Proto\InfoWallpaper\Fit instead', E_USER_DEPRECATED);
 

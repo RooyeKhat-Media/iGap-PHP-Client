@@ -4,46 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.GroupRoom.PublicExtra</code>
- */
-class GroupRoom_PublicExtra extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>string username = 1;</code>
+     * This class is deprecated. Use Proto\GroupRoom\PublicExtra instead.
+     * @deprecated
      */
-    private $username = '';
-
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>string username = 1;</code>
-     * @return string
-     */
-    public function getUsername()
-    {
-        return $this->username;
-    }
-
-    /**
-     * Generated from protobuf field <code>string username = 1;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setUsername($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->username = $var;
-
-        return $this;
-    }
-
+    class GroupRoom_PublicExtra {}
 }
+class_exists(GroupRoom\PublicExtra::class);
+@trigger_error('Proto\GroupRoom_PublicExtra is deprecated and will be removed in the next major release. Use Proto\GroupRoom\PublicExtra instead', E_USER_DEPRECATED);
 

@@ -4,72 +4,13 @@
 
 namespace Proto;
 
-use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
-use Google\Protobuf\Internal\GPBUtil;
-
-/**
- * Generated from protobuf message <code>proto.ClientCondition.Room.OfflineDeleted</code>
- */
-class ClientCondition_Room_OfflineDeleted extends \Google\Protobuf\Internal\Message
-{
+if (false) {
     /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
+     * This class is deprecated. Use Proto\ClientCondition\Room\OfflineDeleted instead.
+     * @deprecated
      */
-    private $message_id = 0;
-    /**
-     * Generated from protobuf field <code>bool both = 4;</code>
-     */
-    private $both = false;
-
-    public function __construct() {
-        \GPBMetadata\ClientCondition::initOnce();
-        parent::__construct();
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
-     * @return int|string
-     */
-    public function getMessageId()
-    {
-        return $this->message_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>uint64 message_id = 1;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setMessageId($var)
-    {
-        GPBUtil::checkUint64($var);
-        $this->message_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool both = 4;</code>
-     * @return bool
-     */
-    public function getBoth()
-    {
-        return $this->both;
-    }
-
-    /**
-     * Generated from protobuf field <code>bool both = 4;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setBoth($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->both = $var;
-
-        return $this;
-    }
-
+    class ClientCondition_Room_OfflineDeleted {}
 }
+class_exists(ClientCondition\Room\OfflineDeleted::class);
+@trigger_error('Proto\ClientCondition_Room_OfflineDeleted is deprecated and will be removed in the next major release. Use Proto\ClientCondition\Room\OfflineDeleted instead', E_USER_DEPRECATED);
 

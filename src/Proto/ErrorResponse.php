@@ -34,9 +34,22 @@ class ErrorResponse extends \Google\Protobuf\Internal\Message
      */
     private $message = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $major_code
+     *     @type int $minor_code
+     *     @type int $wait
+     *     @type string $message
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\Error::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

@@ -22,9 +22,19 @@ class InfoWallpaperResponse extends \Google\Protobuf\Internal\Message
      */
     private $wallpaper;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\Wallpaper[]|\Google\Protobuf\Internal\RepeatedField $wallpaper
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\InfoWallpaper::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

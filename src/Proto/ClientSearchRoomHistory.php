@@ -36,9 +36,23 @@ class ClientSearchRoomHistory extends \Google\Protobuf\Internal\Message
      */
     private $offset_message_id = 0;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $room_id
+     *     @type int $offset
+     *          Deprecated
+     *     @type int $filter
+     *     @type int|string $offset_message_id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ClientSearchRoomHistory::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

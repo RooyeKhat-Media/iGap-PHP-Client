@@ -62,9 +62,29 @@ class File extends \Google\Protobuf\Internal\Message
      */
     private $public_url = '';
 
-    public function __construct() {
-        \GPBMetadata\Global::initOnce();
-        parent::__construct();
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type string $token
+     *     @type string $name
+     *     @type int|string $size
+     *     @type \Proto\Thumbnail $large_thumbnail
+     *     @type \Proto\Thumbnail $small_thumbnail
+     *     @type \Proto\Thumbnail $waveform_thumbnail
+     *     @type int $width
+     *     @type int $height
+     *     @type float $duration
+     *     @type string $cache_id
+     *     @type string $mime
+     *     @type string $public_url
+     * }
+     */
+    public function __construct($data = NULL) {
+        \GPBMetadata\PBGlobal::initOnce();
+        parent::__construct($data);
     }
 
     /**

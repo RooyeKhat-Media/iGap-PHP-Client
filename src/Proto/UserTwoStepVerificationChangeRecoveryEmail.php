@@ -26,9 +26,20 @@ class UserTwoStepVerificationChangeRecoveryEmail extends \Google\Protobuf\Intern
      */
     private $email = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $password
+     *     @type string $email
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserTwoStepVerificationChangeRecoveryEmail::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

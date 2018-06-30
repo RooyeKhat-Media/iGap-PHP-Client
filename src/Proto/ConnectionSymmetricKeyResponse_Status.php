@@ -4,18 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\ConnectionSymmetricKeyResponse\Status</code>
- */
-class ConnectionSymmetricKeyResponse_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>REJECTED = 0;</code>
+     * This class is deprecated. Use Proto\ConnectionSymmetricKeyResponse\Status instead.
+     * @deprecated
      */
-    const REJECTED = 0;
-    /**
-     * Generated from protobuf enum <code>ACCEPTED = 1;</code>
-     */
-    const ACCEPTED = 1;
+    class ConnectionSymmetricKeyResponse_Status {}
 }
+class_exists(ConnectionSymmetricKeyResponse\Status::class);
+@trigger_error('Proto\ConnectionSymmetricKeyResponse_Status is deprecated and will be removed in the next major release. Use Proto\ConnectionSymmetricKeyResponse\Status instead', E_USER_DEPRECATED);
 

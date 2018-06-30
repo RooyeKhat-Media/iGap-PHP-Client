@@ -22,9 +22,19 @@ class UserAvatarAddResponse extends \Google\Protobuf\Internal\Message
      */
     private $avatar = null;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type \Proto\Avatar $avatar
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\UserAvatarAdd::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

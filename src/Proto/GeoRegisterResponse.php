@@ -22,9 +22,19 @@ class GeoRegisterResponse extends \Google\Protobuf\Internal\Message
      */
     private $enable = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type bool $enable
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GeoRegister::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

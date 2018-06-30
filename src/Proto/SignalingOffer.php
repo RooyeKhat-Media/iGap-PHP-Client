@@ -30,9 +30,21 @@ class SignalingOffer extends \Google\Protobuf\Internal\Message
      */
     private $caller_sdp = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type int|string $called_user_id
+     *     @type int $type
+     *     @type string $caller_sdp
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\SignalingOffer::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

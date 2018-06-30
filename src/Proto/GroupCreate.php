@@ -26,9 +26,20 @@ class GroupCreate extends \Google\Protobuf\Internal\Message
      */
     private $description = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $name
+     *     @type string $description
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\GroupCreate::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

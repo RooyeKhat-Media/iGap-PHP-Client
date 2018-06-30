@@ -4,42 +4,13 @@
 
 namespace Proto;
 
-/**
- * Protobuf enum <code>Proto\RegisteredUser\Status</code>
- */
-class RegisteredUser_Status
-{
+if (false) {
     /**
-     * Generated from protobuf enum <code>LONG_TIME_AGO = 0;</code>
+     * This class is deprecated. Use Proto\RegisteredUser\Status instead.
+     * @deprecated
      */
-    const LONG_TIME_AGO = 0;
-    /**
-     * Generated from protobuf enum <code>LAST_MONTH = 1;</code>
-     */
-    const LAST_MONTH = 1;
-    /**
-     * Generated from protobuf enum <code>LAST_WEEK = 2;</code>
-     */
-    const LAST_WEEK = 2;
-    /**
-     * Generated from protobuf enum <code>ONLINE = 3;</code>
-     */
-    const ONLINE = 3;
-    /**
-     * Generated from protobuf enum <code>EXACTLY = 4;</code>
-     */
-    const EXACTLY = 4;
-    /**
-     * Generated from protobuf enum <code>RECENTLY = 5;</code>
-     */
-    const RECENTLY = 5;
-    /**
-     * Generated from protobuf enum <code>SUPPORT = 6;</code>
-     */
-    const SUPPORT = 6;
-    /**
-     * Generated from protobuf enum <code>SERVICE_NOTIFICATIONS = 7;</code>
-     */
-    const SERVICE_NOTIFICATIONS = 7;
+    class RegisteredUser_Status {}
 }
+class_exists(RegisteredUser\Status::class);
+@trigger_error('Proto\RegisteredUser_Status is deprecated and will be removed in the next major release. Use Proto\RegisteredUser\Status instead', E_USER_DEPRECATED);
 

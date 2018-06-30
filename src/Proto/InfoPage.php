@@ -22,9 +22,19 @@ class InfoPage extends \Google\Protobuf\Internal\Message
      */
     private $id = '';
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Request $request
+     *     @type string $id
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\InfoPage::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**

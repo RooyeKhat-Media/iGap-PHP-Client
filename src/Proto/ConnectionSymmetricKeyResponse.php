@@ -34,9 +34,22 @@ class ConnectionSymmetricKeyResponse extends \Google\Protobuf\Internal\Message
      */
     private $security_issue = false;
 
-    public function __construct() {
+    /**
+     * Constructor.
+     *
+     * @param array $data {
+     *     Optional. Data for populating the Message object.
+     *
+     *     @type \Proto\Response $response
+     *     @type int $status
+     *     @type string $symmetric_method
+     *     @type int $symmetric_iv_size
+     *     @type bool $security_issue
+     * }
+     */
+    public function __construct($data = NULL) {
         \GPBMetadata\ConnectionSecuring::initOnce();
-        parent::__construct();
+        parent::__construct($data);
     }
 
     /**
